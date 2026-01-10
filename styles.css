@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    color: #333;
+}
+
+.page-title,
+.subtitle,
+.intro-text {
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.menu-card {
+    flex: 1 1 300px;
+    background: burlywood;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    background-color: #ff9900;
+}
+
+.menu-card h2 {
+    text-align: center;
+}
+
+.menu-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-card li {
+    background: #fff3e0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-card li:hover {
+    background: #ffcc80;
+    transform: scale(1.05);
+}
+
+.contact-text,
+.back-link {
+    display: block;
+    margin: 20px;
+}
+
+.back-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #ff4e50;
+}
+
+
+/* Foods hover icons */
+
+.menu-card:nth-child(1) li:hover::before {
+    content: "🍗 ";
+}
+
+
+/* Drinks hover icons */
+
+.menu-card:nth-child(2) li:hover::before {
+    content: "🥤 ";
+}
+
+
+/* Snacks hover icons */
+
+.menu-card:nth-child(3) li:hover::before {
+    content: "🍪 ";
+}
+
+.preview-box {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.preview-box img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+li {
+    position: relative;
+}
+
+li:hover .preview-box {
+    display: block;
+    top: -160px;
+    /* adjust to move box above */
+    left: 0;
+}
