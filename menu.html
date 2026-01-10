@@ -5,109 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Canteen ni Alcab</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <audio autoplay loop hidden>
+    <source src="ytmp3free.cc_stardew-valley-ost-fall-ravens-descent-youtubemp3free.org.mp3" type="audio/mpeg">
+  </audio>
 </head>
 
-<body style="background: linear-gradient(to right, #f9d423, #ff4e50);">
-    <h1 align="center">Canteen ni Alcab Menu</h1>
-    <h3 align="center">Delicious Meals Just for You!</h3>
-    <h1> </h1>
-    <p align="center">Here are some of our popular dishes:</p>
-    <div style="width:1000px; height: 350px; background-color:burlywood; position:absolute; top: 200px; left: 140px; border-radius: 15px;">
-        <h1 style=" position:fixed; top: 200px; left: 200px; ">Foods</h1>
-        <ul style="position:fixed; top: 225px; left: 150px; ">
-            <h3>
-                <li> Sisig - 70 pesos</li>
-                <li> Chicken Adobo - 60 pesos</li>
-                <li> Beef Tapa - 70 pesos</li>
-                <li> Fried Rice - 20 pesos</li>
-                <li> Lumpia - 10 pesos</li>
-                <li> Hotdog - 15 pesos</li>
-                <li> Bam-i - 15 pesos</li>
-                <li> Tinola - 45 pesos</li>
-                <li> Mongos - 10 pesos</li>
-                <li> Utan - 10 pesos</li>
-                <li> Tinuwa - 40 pesos</li>
-                <li> Humba - 50 pesos</li>
-            </h3>
-        </ul>
+<body>
+    <h1 class="page-title">Canteen ni Alcab Menu</h1>
+    <h3 class="subtitle">Delicious Meals Just for You!</h3>
+    <p class="intro-text">Here are some of our popular dishes:</p>
 
-        <h1 style="position:fixed; top: 200px; left: 525px; ">Drinks</h1>
-        <ul style="position:fixed; top: 225px; left: 500px; ">
-            <h3>
-                <li> C2 Red - 15 pesos</li>
-                <li> Coke - 15 pesos</li>
-                <li> Sprite - 15 pesos</li>
-                <li> Mountain Dew - 20 pesos</li>
-                <li> Water - 10 pesos</li>
-                <li> Dutchmilk - 15 pesos</li>
-                <li> Taho - 15 pesos</li>
-                <li> Buko Juice - 10 pesos</li>
-                <li> Pineapple Juice - 10 pesos</li>
-                <li> Milktea - 40 pesos</li>
-                <li> Coffee - 15 pesos</li>
-                <li> Mais con yelo - 15 pesos</li>
-            </h3>
-        </ul>
+    <div class="menu-container">
+        <!-- Foods -->
+        <div class="menu-card">
+            <h2>Foods</h2>
+            <ul>
+                <li>Sisig - 70 pesos
+                    <div class="preview-box"><img src="images/sisig.jpg" alt="Sisig"></div>
+                </li>
+                <li>Chicken Adobo - 60 pesos
+                    <div class="preview-box"><img src="images/chicken adobo.jpg" alt="Chicken Adobo"></div>
+                </li>
+                <li>Beef Tapa - 70 pesos
+                    <div class="preview-box"><img src="images/beef tapa.jpg" alt="Beef Tapa"></div>
+                </li>
+                <li>Fried Rice - 20 pesos
+                    <div class="preview-box"><img src="images/fried rice.jpg" alt="Fried Rice"></div>
+                </li>
+                <li>Lumpia - 10 pesos
+                    <div class="preview-box"><img src="images/lumpia.jpg" alt="Lumpia"></div>
+                </li>
+                <li>Hotdog - 15 pesos
+                    <div class="preview-box"><img src="images/hotdog.jpg" alt="Hotdog"></div>
+                </li>
+                <li>Bam-i - 15 pesos
+                    <div class="preview-box"><img src="images/bam-i.jpg" alt="Bam-i"></div>
+                </li>
+                <li>Tinola - 45 pesos
+                    <div class="preview-box"><img src="images/tinola.jpg" alt="Tinola"></div>
+                </li>
+                <li>Mongos - 10 pesos
+                    <div class="preview-box"><img src="images/mongos.jpg" alt="Mongos"></div>
+                </li>
+                <li>Utan - 10 pesos
+                    <div class="preview-box"><img src="images/utan.jpg" alt="Utan"></div>
+                </li>
+                <li>Tinuwa - 40 pesos
+                    <div class="preview-box"><img src="images/tinuwa.jpg" alt="Tinuw"></div>
+                </li>
+                <li>Humba - 50 pesos
+                    <div class="preview-box"><img src="images/humba .jpg" alt="Humba"></div>
+                </li>
+            </ul>
+        </div>
 
-        <h1 style="position:fixed; top: 200px; left: 900px; ">Snacks</h1>
-        <ul style="position:fixed; top: 225px; left: 875px; ">
-            <h3>
-                <li> Skyflakes - 10 pesos</li>
-                <li> Fita - 10 pesos</li>
-                <li> Oreos - 20 pesos</li>
-                <li> Cloud 9 - 20 pesos</li>
-                <li> Turon - 10 pesos</li>
-                <li> Banana Cue - 10 pesos</li>
-                <li> Puto - 10 pesos</li>
-                <li> Ensaymada - 20 pesos</li>
-                <li> Bibingka - 10 pesos</li>
-                <li> Pastillias - 10 pesos</li>
-                <li> Polvoron - 12 pesos</li>
-                <li> Kutsinta - 15 pesos</li>
-            </h3>
-        </ul>
+        <!-- Drinks -->
+        <div class="menu-card">
+            <h2>Drinks</h2>
+            <ul>
+                <li>C2 Red - 15 pesos
+                    <div class="preview-box"><img src="images/c2 red.jpg" alt="C2 Red"></div>
+                </li>
+                <li>Coke - 15 pesos
+                    <div class="preview-box"><img src="images/coke.jpg" alt="Coke"></div>
+                </li>
+                <li>Sprite - 15 pesos
+                    <div class="preview-box"><img src="images/sprite.jpg" alt="Sprite"></div>
+                </li>
+                <li>Mountain Dew - 20 pesos
+                    <div class="preview-box"><img src="images/mountain dew.jpg" alt="Mountain Dew"></div>
+                </li>
+                <li>Water - 10 pesos
+                    <div class="preview-box"><img src="images/water.jpg" alt="Water"></div>
+                </li>
+                <li>Dutchmilk - 15 pesos
+                    <div class="preview-box"><img src="images/dutchmilk.jpg" alt="Dutchmilk"></div>
+                </li>
+                <li>Taho - 15 pesos
+                    <div class="preview-box"><img src="images/taho.jpg" alt="Taho"></div>
+                </li>
+                <li>Buko Juice - 10 pesos
+                    <div class="preview-box"><img src="images/buko juivr.jpg" alt="Buko Juice"></div>
+                </li>
+                <li>Pineapple Juice - 10 pesos
+                    <div class="preview-box"><img src="images/pineapple juice.jpg" alt="Pineapple Juice"></div>
+                </li>
+                <li>Milktea - 40 pesos
+                    <div class="preview-box"><img src="images/milktea.jpg" alt="Milktea"></div>
+                </li>
+                <li>Coffee - 15 pesos
+                    <div class="preview-box"><img src="images/coffee.jpg" alt="Coffee"></div>
+                </li>
+                <li>Mais con yelo - 15 pesos
+                    <div class="preview-box"><img src="images/mais con yelo.jpg" alt="Mais con yelo"></div>
+                </li>
+            </ul>
+        </div>
 
+        <!-- Snacks -->
+        <div class="menu-card">
+            <h2>Snacks</h2>
+            <ul>
+                <li>Skyflakes - 10 pesos
+                    <div class="preview-box"><img src="images/skyflakes.jpg" alt="Skyflakes"></div>
+                </li>
+                <li>Fita - 10 pesos
+                    <div class="preview-box"><img src="images/fita.jpg" alt="Fita"></div>
+                </li>
+                <li>Oreos - 20 pesos
+                    <div class="preview-box"><img src="images/oreo.jpg" alt="Oreos"></div>
+                </li>
+                <li>Cloud 9 - 20 pesos
+                    <div class="preview-box"><img src="images/cloud 0.jpg" alt="Cloud 9"></div>
+                </li>
+                <li>Turon - 10 pesos
+                    <div class="preview-box"><img src="images/turon.jpg" alt="Turon"></div>
+                </li>
+                <li>Banana Cue - 10 pesos
+                    <div class="preview-box"><img src="images/banana cue.jpg" alt="Banana Cue"></div>
+                </li>
+                <li>Puto - 10 pesos
+                    <div class="preview-box"><img src="images/puto.jpg" alt="Puto"></div>
+                </li>
+                <li>Ensaymada - 20 pesos
+                    <div class="preview-box"><img src="images/ensaymada.jpg" alt="Ensaymada"></div>
+                </li>
+                <li>Bibingka - 10 pesos
+                    <div class="preview-box"><img src="images/bibingka.jpg" alt="Bibingka"></div>
+                </li>
+                <li>Pastillias - 10 pesos
+                    <div class="preview-box"><img src="images/pastillas.jpg" alt="Pastillias"></div>
+                </li>
+                <li>Polvoron - 12 pesos
+                    <div class="preview-box"><img src="images/polvoron.jpg" alt="Polvoron"></div>
+                </li>
+                <li>Kutsinta - 15 pesos
+                    <div class="preview-box"><img src="images/kutsinta.jpg" alt="Kutsinta"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <p style="position:fixed; top: 535px; left: 10px;">To place an order, please contact us via email.</p>
-
-        <a href="index.html" position="fixed" style="position:fixed; top: 565px; left: 10px;">Back to Home</a>
-
+    <p class="contact-text">To place an order, please contact us via email.</p>
+    <a href="index.html" class="back-link">Back to Home</a>
 </body>
 
-
 </html>
-
-
